@@ -69,6 +69,10 @@ This implement:
           exit("dvc pull failed")
       os.system("rm -r .dvc .apt/usr/lib/dvc")
   ```
+- Set up access to AWS on Heroku:
+  ```bash
+  > heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy
+  ```
 - Heroku app creation:
   - We create a new app:
   ```bash
