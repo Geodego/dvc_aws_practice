@@ -5,3 +5,5 @@ pyyaml ~= 6.0
 fastapi ~= 0.63.0
 uvicorn
 gunicorn
+# we use pytorch cpu only version to reduce the slug size in Heroku
+-f https://download.pytorch.org/whl/torch_stable.html
