@@ -69,7 +69,7 @@ def post_tool(predict_body: Item) -> Item:
     return output
 
 
-@app.post("/predict")
+@app.post("/predict", response_model=Item)
 async def predict(predict_body: Item):
     """
     In this basic example we read data.csv and return a dictionary with the values of its first row added
