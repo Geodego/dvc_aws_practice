@@ -7,3 +7,4 @@ uvicorn
 gunicorn
 # we use pytorch cpu only version to reduce the slug size in Heroku
 -f https://download.pytorch.org/whl/torch_stable.html
+torch==1.4.0+cpu
