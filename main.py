@@ -64,8 +64,8 @@ def post_tool(predict_body: Item) -> Item:
     """
     df = pd.read_csv('data.csv')[['a', 'b']].iloc[0]
     output = predict_body.copy()
-    output.a += df['a']
-    output.b += df['b']
+    output.a += int(df['a'])
+    output.b += int(df['b'])
     return output
 
 
@@ -78,6 +78,7 @@ async def predict(predict_body: Item):
     """
     logger.warning("entering POST request")
     logger.warning(f'error status of dvc pull: {pull_err}')
+
     output = post_tool(predict_body)
 
     return output
