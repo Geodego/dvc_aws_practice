@@ -88,3 +88,10 @@ This implement:
   ```bash
   > git push heroku main
   ```
+  if the previous command doesn't work, try 
+- ```bash
+  > git push heroku master
+  ```
+
+# Test API
+
